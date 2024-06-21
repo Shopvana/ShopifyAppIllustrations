@@ -16,7 +16,7 @@ function App() {
   const [filteredIcons, setFilteredIcons] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/illustrations/images.json`)
+    fetch(`${process.env.PUBLIC_URL}/images.json`)
       .then((response) => response.json())
       .then((data) => {
         setIcons(data);
@@ -55,7 +55,7 @@ function App() {
                 label="Search Icons"
                 value={searchTerm}
                 onChange={handleSearchChange}
-                placeholder="Enter a keyword.."
+                placeholder="Enter a keyword..."
               />
             </LegacyCard>
           </Layout.Section>
