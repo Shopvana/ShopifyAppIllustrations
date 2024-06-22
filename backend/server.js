@@ -21,6 +21,8 @@ app.use(bodyParser.json());
 // Middleware to verify custom API key
 const authenticateApiKey = (req, res, next) => {
   const apiKey = req.headers['x-api-key'];
+  console.log('API key:', apiKey);
+  console.log('Expected API key:', API_KEY)
   if (!apiKey || apiKey !== API_KEY) {
     return res.sendStatus(401); // Unauthorized
   }
