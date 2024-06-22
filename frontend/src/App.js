@@ -25,6 +25,7 @@ import "@shopify/polaris/build/esm/styles.css";
 import { createNotionPage } from "./services/notionService.js";
 import TopBarExample from "./TopBarExample";
 
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [icons, setIcons] = useState([]);
@@ -147,10 +148,11 @@ function App() {
                     gridTemplateColumns:
                       "repeat(auto-fill, minmax(200px, 1fr))",
                     gap: "20px",
+                    padding: "0 20px", // Add padding for side margins
                   }}
                 >
                   {displayedIcons.map((icon, index) => (
-                    <Card key={index} sectioned>
+                    <Card key={index} sectioned >
                       <BlockStack gap="200">
                       <Text as="h2" variant="headingSm">
                         {icon.name}

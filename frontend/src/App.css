@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-item {
+  margin: 10px; /* Add margin to cards for spacing */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagination-container {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .grid-container {
+    padding: 10px; /* Add padding to the grid container for mobile view */
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-item {
+    margin: 10px; /* Adjust card margin for mobile view */
+  }
+
+  .pagination-container {
+    padding: 10px; /* Adjust pagination container padding for mobile view */
   }
 }
