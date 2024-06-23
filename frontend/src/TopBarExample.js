@@ -73,16 +73,8 @@ export const TopBarExample = ({ searchValue, handleSearchChange, setModalActive 
         </span>
       }
       open={isSecondaryMenuOpen}
-      onOpen={toggleIsSecondaryMenuOpen}
-      onClose={toggleIsSecondaryMenuOpen}
-      actions={[
-        {
-          items: [{ 
-            content: 'Request Illustration',
-            onAction: () => setModalActive(true),
-         }],
-        },
-      ]}
+      onOpen={() => setModalActive(true)}
+      onClose={() => setModalActive(false)}
     />
   );
 
