@@ -19,12 +19,12 @@ import {
   ButtonGroup,
   Text,
   BlockStack,
+  Spinner,
 } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import "@shopify/polaris/build/esm/styles.css";
 import { createNotionPage } from "./services/notionService.js";
 import TopBarExample from "./TopBarExample";
-
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,6 +38,7 @@ function App() {
   const [description, setDescription] = useState("");
   const [active, setActive] = useState(false);
   const [toastContent, setToastContent] = useState("");
+  const [loading, setLoading] = useState(true); // Spinner state
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/images.json`)
@@ -45,6 +46,12 @@ function App() {
       .then((data) => {
         setIcons(data);
         setFilteredIcons(data);
+        setLoading(false); // Stop spinner after loading
+      })
+      .catch(() => {
+        setLoading(false); // Stop spinner even if there's an error
+        setToastContent("Error loading icons. Please try again.");
+        toggleActive();
       });
   }, []);
 
@@ -57,13 +64,13 @@ function App() {
         icon.description.toLowerCase().includes(value.toLowerCase())
       );
       setFilteredIcons(results);
-      setCurrentPage(1); // Reset to the first page when searching
+      setCurrentPage(1);
     }
   };
 
   const handleDownload = (iconUrl) => {
     const link = document.createElement("a");
-    link.href = `${process.env.PUBLIC_URL}/illustrations/${iconUrl}`;
+    link.href = `${process.env.PUBLIC_URL}/illustrations/svgs/${iconUrl}`;
     link.download = iconUrl;
     document.body.appendChild(link);
     link.click();
@@ -101,7 +108,7 @@ function App() {
   ) : null;
 
   const handleFormSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault();
     console.log({ name, email, description });
 
     createNotionPage(name, email, description)
@@ -138,68 +145,66 @@ function App() {
         logo={logo}
       >
         <Page title="Shopify App Illustrations">
-          {displayedIcons.length > 0 ? (
+          {loading ? (
+            <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+              <Spinner accessibilityLabel="Loading illustrations" size="large" />
+            </div>
+          ) : displayedIcons.length > 0 ? (
             <Layout>
               <Layout.Section>
-                
                 <div
                   style={{
                     display: "grid",
-                    gridTemplateColumns:
-                      "repeat(auto-fill, minmax(200px, 1fr))",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
                     gap: "20px",
-                    padding: "0 20px", // Add padding for side margins
+                    padding: "0 20px",
                   }}
                 >
                   {displayedIcons.map((icon, index) => (
-                    <Card key={index} sectioned >
+                    <Card key={index} sectioned>
                       <BlockStack gap="200">
-                      <Text as="h2" variant="headingSm">
-                        {icon.name}
-                      </Text>
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          height: "100%",
-                        }}
-                        marginTop
-                      >
+                        <Text as="h2" variant="headingSm">
+                          {icon.name}
+                        </Text>
                         <div
                           style={{
-                            width: "100%",
-                            height: "150px",
                             display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            marginBottom: "20px",
+                            flexDirection: "column",
+                            height: "100%",
                           }}
                         >
-                          <img
-                            src={`${process.env.PUBLIC_URL}/illustrations/${icon.thumbnailPath}`}
-                            alt={icon.name}
+                          <div
                             style={{
-                              maxWidth: "100%",
-                              maxHeight: "100%",
-                              objectFit: "contain",
+                              width: "100%",
+                              height: "150px",
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              marginBottom: "20px",
                             }}
-                          />
+                          >
+                            <img
+                              src={`${process.env.PUBLIC_URL}/illustrations/svgs/${icon.fileName}`}
+                              alt={icon.name}
+                              style={{
+                                maxWidth: "100%",
+                                maxHeight: "100%",
+                                objectFit: "contain",
+                              }}
+                            />
+                          </div>
+                          <InlineStack align="center">
+                            <ButtonGroup>
+                              <Button
+                                variant="primary"
+                                fullWidth
+                                onClick={() => handleDownload(icon.fileName)}
+                              >
+                                Download
+                              </Button>
+                            </ButtonGroup>
+                          </InlineStack>
                         </div>
-                        <InlineStack align="center">
-                          <ButtonGroup>
-                            {/* <Button fullWidth onClick={handleModalChange}>
-                              Source
-                            </Button> */}
-                            <Button
-                              variant="primary"
-                              fullWidth
-                              onClick={() => handleDownload(icon.downloadPath)}
-                            >
-                              Download
-                            </Button>
-                          </ButtonGroup>
-                        </InlineStack>
-                      </div>
                       </BlockStack>
                     </Card>
                   ))}
@@ -217,8 +222,7 @@ function App() {
                 }}
               >
                 <p>
-                  Try adjusting your search or filter to find what you're
-                  looking for.
+                  Try adjusting your search or filter to find what you're looking for.
                 </p>
               </EmptyState>
             </Card>
@@ -231,15 +235,12 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-       
               }}
             >
               <Pagination
                 hasPrevious={currentPage > 1}
                 onPrevious={handlePreviousPage}
-                hasNext={
-                  currentPage < Math.ceil(filteredIcons.length / iconsPerPage)
-                }
+                hasNext={currentPage < Math.ceil(filteredIcons.length / iconsPerPage)}
                 onNext={handleNextPage}
               />
             </div>

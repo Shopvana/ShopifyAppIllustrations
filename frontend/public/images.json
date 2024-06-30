@@ -1,123 +1,102 @@
 [
     {
-      "name": "Customer Loyalty",
-      "description": "Illustration of a loyalty card or reward points.",
-      "downloadPath": "CustomerLoyaltyIllustrationofaloyaltycardorrewardpoints.png",
-      "thumbnailPath": "thumbnails/CustomerLoyaltyIllustrationofaloyaltycardorrewardpoints.png"
+        "name": "Customer Loyalty",
+        "description": "Illustration of a loyalty card or reward points.",
+        "fileName": "CustomerLoyaltyIllustrationofaloyaltycardorrewardpoints.svg"
     },
     {
-      "name": "Customer Support",
-      "description": "Visual of a customer service representative assisting a customer.",
-      "downloadPath": "CustomerSupportVisualofacustomerservicerepresentativeassistingacustomer.png",
-      "thumbnailPath": "thumbnails/CustomerSupportVisualofacustomerservicerepresentativeassistingacustomer.png"
+        "name": "Customer Support",
+        "description": "Visual of a customer service representative assisting a customer.",
+        "fileName": "CustomerSupportVisualofacustomerservicerepresentativeassistingacustomer.svg"
     },
     {
-      "name": "Digital Marketing",
-      "description": "Icons representing social media ads and email marketing.",
-      "downloadPath": "DigitalMarketingIconsrepresentingsocialmediaadsandemailmarketing.png",
-      "thumbnailPath": "thumbnails/DigitalMarketingIconsrepresentingsocialmediaadsandemailmarketing.png"
+        "name": "Digital Marketing",
+        "description": "Icons representing social media ads and email marketing.",
+        "fileName": "DigitalMarketingIconsrepresentingsocialmediaadsandemailmarketing.svg"
     },
     {
-      "name": "Discounts and Offers",
-      "description": "Sale tag or discount percentage symbol.",
-      "downloadPath": "DiscountsandOffersSaletagordiscountpercentagesymbol.png",
-      "thumbnailPath": "thumbnails/DiscountsandOffersSaletagordiscountpercentagesymbol.png"
+        "name": "Discounts and Offers",
+        "description": "Sale tag or discount percentage symbol.",
+        "fileName": "DiscountsandOffersSaletagordiscountpercentagesymbol.svg"
     },
     {
-      "name": "Ecommerce Analytics",
-      "description": "Charts and graphs showing sales data.",
-      "downloadPath": "EcommerceAnalyticsChartsandgraphsshowingsalesdata.png",
-      "thumbnailPath": "thumbnails/EcommerceAnalyticsChartsandgraphsshowingsalesdata.png"
+        "name": "Ecommerce Analytics",
+        "description": "Charts and graphs showing sales data.",
+        "fileName": "E-commerceAnalyticsChartsandgraphsshowingsalesdata.svg"
     },
     {
-      "name": "Holiday Season",
-      "description": "Festive decorations or gift wrapping for seasonal promotions.",
-      "downloadPath": "HolidaySeasonFestivedecorationsorgiftwrappingforseasonalpromotions.png",
-      "thumbnailPath": "thumbnails/HolidaySeasonFestivedecorationsorgiftwrappingforseasonalpromotions.png"
+        "name": "Holiday Season",
+        "description": "Festive decorations or gift wrapping for seasonal promotions.",
+        "fileName": "HolidaySeasonFestivedecorationsorgiftwrappingforseasonalpromotions.svg"
     },
     {
-      "name": "Inventory Management",
-      "description": "Shelves stocked with products and barcode scanners.",
-      "downloadPath": "InventoryManagementShelvesstockedwithproductsandbarcodescanners.png",
-      "thumbnailPath": "thumbnails/InventoryManagementShelvesstockedwithproductsandbarcodescanners.png"
+        "name": "Inventory Management",
+        "description": "Shelves stocked with products and barcode scanners.",
+        "fileName": "InventoryManagementShelvesstockedwithproductsandbarcodescanners.svg"
     },
     {
-      "name": "Local Pickup",
-      "description": "Map pin indicating local pickup location.",
-      "downloadPath": "LocalPickupMappinindicatinglocalpickuplocation.png",
-      "thumbnailPath": "thumbnails/LocalPickupMappinindicatinglocalpickuplocation.png"
+        "name": "Local Pickup",
+        "description": "Map pin indicating local pickup location.",
+        "fileName": "LocalPickupMappinindicatinglocalpickuplocation.svg"
     },
     {
-      "name": "Mobile Shopping",
-      "description": "Smartphone with shopping app displayed.",
-      "downloadPath": "MobileShoppingSmartphonewithshoppingappdisplayed.png",
-      "thumbnailPath": "thumbnails/MobileShoppingSmartphonewithshoppingappdisplayed.png"
+        "name": "Mobile Shopping",
+        "description": "Smartphone with shopping app displayed.",
+        "fileName": "MobileShoppingSmartphonewithshoppingappdisplayed.svg"
     },
     {
-      "name": "Online Store",
-      "description": "A modern storefront with a digital interface.",
-      "downloadPath": "OnlineStoreAmodernstorefrontwithadigitalinterface.png",
-      "thumbnailPath": "thumbnails/OnlineStoreAmodernstorefrontwithadigitalinterface.png"
+        "name": "Online Store",
+        "description": "A modern storefront with a digital interface.",
+        "fileName": "OnlineStoreAmodernstorefrontwithadigitalinterface.svg"
     },
     {
-      "name": "Order Fulfillment",
-      "description": "Warehouse scene with inventory and shipping boxes.",
-      "downloadPath": "OrderFulfillmentWarehousescenewithinventoryandshippingboxes.png",
-      "thumbnailPath": "thumbnails/OrderFulfillmentWarehousescenewithinventoryandshippingboxes.png"
+        "name": "Order Fulfillment",
+        "description": "Warehouse scene with inventory and shipping boxes.",
+        "fileName": "OrderFulfillmentWarehousescenewithinventoryandshippingboxes.svg"
     },
     {
-      "name": "Payment",
-      "description": "Payment illustration.",
-      "downloadPath": "Payment.png",
-      "thumbnailPath": "thumbnails/Payment.png"
+        "name": "Payment Process",
+        "description": "Illustration showing a secure payment transaction.",
+        "fileName": "PaymentProcessIllustrationshowingasecurepaymenttransaction.svg"
     },
     {
-      "name": "Product Customization",
-      "description": "Illustration of customizable product options.",
-      "downloadPath": "ProductCustomizationIllustrationofcustomizableproductoptions.png",
-      "thumbnailPath": "thumbnails/ProductCustomizationIllustrationofcustomizableproductoptions.png"
+        "name": "Product Customization",
+        "description": "Illustration of customizable product options.",
+        "fileName": "ProductCustomizationIllustrationofcustomizableproductoptions.svg"
     },
     {
-      "name": "Product Delivery",
-      "description": "Delivery van or courier with packages.",
-      "downloadPath": "ProductDeliveryDeliveryvanorcourierwithpackages.png",
-      "thumbnailPath": "thumbnails/ProductDeliveryDeliveryvanorcourierwithpackages.png"
+        "name": "Product Delivery",
+        "description": "Delivery van or courier with packages.",
+        "fileName": "ProductDeliveryDeliveryvanorcourierwithpackages.svg"
     },
     {
-      "name": "Product Reviews",
-      "description": "Stars or feedback symbols representing customer reviews.",
-      "downloadPath": "ProductReviewsStarsorfeedbacksymbolsrepresentingcustomerreviews.png",
-      "thumbnailPath": "thumbnails/ProductReviewsStarsorfeedbacksymbolsrepresentingcustomerreviews.png"
+        "name": "Product Reviews",
+        "description": "Stars or feedback symbols representing customer reviews.",
+        "fileName": "ProductReviewsStarsorfeedbacksymbolsrepresentingcustomerreviews.svg"
     },
     {
-      "name": "Product Showcase",
-      "description": "Display of various products like clothing or electronics.",
-      "downloadPath": "ProductShowcaseDisplayofvariousproductslikeclothingorelectronics.png",
-      "thumbnailPath": "thumbnails/ProductShowcaseDisplayofvariousproductslikeclothingorelectronics.png"
+        "name": "Product Showcase",
+        "description": "Display of various products like clothing or electronics.",
+        "fileName": "ProductShowcaseDisplayofvariousproductslikeclothingorelectronics.svg"
     },
     {
-      "name": "Secure Transactions",
-      "description": "Padlock or shield symbolizing security.",
-      "downloadPath": "SecureTransactionsPadlockorshieldsymbolizingsecurity.png",
-      "thumbnailPath": "thumbnails/SecureTransactionsPadlockorshieldsymbolizingsecurity.png"
+        "name": "Secure Transactions",
+        "description": "Padlock or shield symbolizing security.",
+        "fileName": "SecureTransactionsPadlockorshieldsymbolizingsecurity.svg"
     },
     {
-      "name": "Shopping Cart",
-      "description": "A stylized shopping cart icon filled with items.",
-      "downloadPath": "ShoppingCartAstylizedshoppingcarticonfilledwithitems.png",
-      "thumbnailPath": "thumbnails/ShoppingCartAstylizedshoppingcarticonfilledwithitems.png"
+        "name": "Shopping Cart",
+        "description": "A stylized shopping cart icon filled with items.",
+        "fileName": "ShoppingCartAstylizedshoppingcarticonfilledwithitems.svg"
     },
     {
-      "name": "Subscription Service",
-      "description": "Illustration of recurring payment or membership.",
-      "downloadPath": "SubscriptionServiceIllustrationofrecurringpaymentormembership.png",
-      "thumbnailPath": "thumbnails/SubscriptionServiceIllustrationofrecurringpaymentormembership.png"
+        "name": "Subscription Service",
+        "description": "Illustration of recurring payment or membership.",
+        "fileName": "SubscriptionServiceIllustrationofrecurringpaymentormembership.svg"
     },
     {
-      "name": "Cross-platform Integration",
-      "description": "Devices like laptop, tablet, and smartphone syncing.",
-      "downloadPath": "VCrossplatformIntegrationDeviceslikelaptoptabletandsmartphonesyncing.png",
-      "thumbnailPath": "thumbnails/VCrossplatformIntegrationDeviceslikelaptoptabletandsmartphonesyncing.png"
+        "name": "Cross-platform Integration",
+        "description": "Devices like laptop, tablet, and smartphone syncing.",
+        "fileName": "Cross-platformIntegrationDeviceslikelaptoptabletandsmartphonesyncing.svg"
     }
-  ]
-  
+]
