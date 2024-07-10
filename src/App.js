@@ -23,8 +23,7 @@ import {
 } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import "@shopify/polaris/build/esm/styles.css";
-import { createNotionPage } from "./services/notionService.js";
-import TopBarExample from "./TopBarExample";
+import TopBarExample from "./TopBarExample.js";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,10 +31,6 @@ function App() {
   const [filteredIcons, setFilteredIcons] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const iconsPerPage = 8;
-  const [modalActive, setModalActive] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [description, setDescription] = useState("");
   const [active, setActive] = useState(false);
   const [toastContent, setToastContent] = useState("");
   const [loading, setLoading] = useState(true); // Spinner state
@@ -92,10 +87,7 @@ function App() {
     currentPage * iconsPerPage
   );
 
-  const handleModalChange = useCallback(
-    () => setModalActive(!modalActive),
-    [modalActive]
-  );
+
 
   const toggleActive = useCallback(() => setActive((active) => !active), []);
 
@@ -107,23 +99,7 @@ function App() {
     />
   ) : null;
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    console.log({ name, email, description });
 
-    createNotionPage(name, email, description)
-      .then((data) => {
-        console.log("Page created successfully:", data);
-        setToastContent("Request submitted successfully!");
-        toggleActive();
-      })
-      .catch((error) => {
-        console.error("Error creating Notion page:", error);
-        setToastContent("Error submitting request. Please try again.");
-        toggleActive();
-      });
-    setModalActive(false);
-  };
 
   const logo = {
     topBarSource: "https://i.ibb.co/2Y8hg80/Group.png",
@@ -139,7 +115,6 @@ function App() {
           <TopBarExample
             searchValue={searchTerm}
             handleSearchChange={handleSearchChange}
-            setModalActive={setModalActive}
           />
         }
         logo={logo}
@@ -218,7 +193,7 @@ function App() {
                 image="https://cdn.shopify.com/s/files/1/0262/4071/2726/files/emptystate-files.png"
                 action={{
                   content: "Request Illustration",
-                  onAction: handleModalChange,
+                  onAction: ()=> window.open("https://github.com/Shopvana/ShopifyAppIllustrations/issues"),
                 }}
               >
                 <p>
@@ -248,50 +223,6 @@ function App() {
           <FooterHelp>
             Made with ❤️ by <Link url="https://shopvana.io">Shopvana</Link>
           </FooterHelp>
-
-          <Modal
-            open={modalActive}
-            onClose={handleModalChange}
-            title="Request Illustration"
-            primaryAction={{
-              content: "Submit Request",
-              onAction: handleFormSubmit,
-            }}
-            secondaryActions={[
-              {
-                content: "Cancel",
-                onAction: handleModalChange,
-              },
-            ]}
-          >
-            <Modal.Section>
-              <FormLayout>
-                <FormLayout.Group>
-                  <TextField
-                    label="Name"
-                    value={name}
-                    onChange={(value) => setName(value)}
-                    autoComplete="off"
-                  />
-                  <TextField
-                    label="Email"
-                    value={email}
-                    onChange={(value) => setEmail(value)}
-                    type="email"
-                    autoComplete="off"
-                    helpText="We'll notify you when it's available."
-                  />
-                  <TextField
-                    label="Description of Illustration"
-                    value={description}
-                    onChange={(value) => setDescription(value)}
-                    multiline={4}
-                    autoComplete="off"
-                  />
-                </FormLayout.Group>
-              </FormLayout>
-            </Modal.Section>
-          </Modal>
           {toastMarkup}
         </Page>
       </Frame>

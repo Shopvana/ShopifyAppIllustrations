@@ -2,7 +2,7 @@ import { TopBar, ActionList, Icon, Frame, Text } from '@shopify/polaris';
 import { PlusIcon } from '@shopify/polaris-icons';
 import { useState, useCallback } from 'react';
 
-export const TopBarExample = ({ searchValue, handleSearchChange, setModalActive }) => {
+export const TopBarExample = ({ searchValue, handleSearchChange }) => {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isSecondaryMenuOpen, setIsSecondaryMenuOpen] = useState(false);
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -73,9 +73,7 @@ export const TopBarExample = ({ searchValue, handleSearchChange, setModalActive 
         </span>
       }
       open={isSecondaryMenuOpen}
-      onOpen={() => setModalActive(true)}
-      onClose={() => setModalActive(false)}
-    />
+      onOpen={() => window.open("https://github.com/Shopvana/ShopifyAppIllustrations/issues")}    />
   );
 
   return (
