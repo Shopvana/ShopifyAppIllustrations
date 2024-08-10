@@ -98,5 +98,50 @@
         "name": "Cross-platform Integration",
         "description": "Devices like laptop, tablet, and smartphone syncing.",
         "fileName": "Cross-platformIntegrationDeviceslikelaptoptabletandsmartphonesyncing.svg"
+    },
+    {
+        "name": "Bad Connection",
+        "description": "Illustration representing a poor or lost connection.",
+        "fileName": "BadConnection.svg"
+    },
+    {
+        "name": "Call",
+        "description": "Visual of a phone call or communication.",
+        "fileName": "Call.svg"
+    },
+    {
+        "name": "Dangerous Action",
+        "description": "Warning or caution symbol indicating a risky action.",
+        "fileName": "DangerousAction.svg"
+    },
+    {
+        "name": "Fireworks",
+        "description": "Illustration of fireworks or a celebratory event.",
+        "fileName": "Fireworks.svg"
+    },
+    {
+        "name": "Idea",
+        "description": "Lightbulb symbol representing a new idea or inspiration.",
+        "fileName": "Idea.svg"
+    },
+    {
+        "name": "Nature",
+        "description": "Visual representing natural elements like trees or landscapes.",
+        "fileName": "Nature.svg"
+    },
+    {
+        "name": "Paper and Pencil",
+        "description": "Illustration of a paper and pencil, representing writing or drawing.",
+        "fileName": "Paperandpencil.svg"
+    },
+    {
+        "name": "Trash",
+        "description": "Icon of a trash bin or waste disposal.",
+        "fileName": "Trash.svg"
+    },
+    {
+        "name": "Uniform",
+        "description": "Illustration representing a uniform or standardized clothing.",
+        "fileName": "Uniform.svg"
     }
 ]
