@@ -102,8 +102,8 @@ function App() {
 
 
   const logo = {
-    topBarSource: "https://i.ibb.co/2Y8hg80/Group.png",
-    width: 86,
+    topBarSource: `${process.env.PUBLIC_URL}/logo.png`,
+    width: 20,
     url: "https://shopvana.io",
     accessibilityLabel: "Shopvana",
   };
