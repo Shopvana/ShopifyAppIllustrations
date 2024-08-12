@@ -143,5 +143,55 @@
         "name": "Uniform",
         "description": "Illustration representing a uniform or standardized clothing.",
         "fileName": "Uniform.svg"
+    },
+    {
+        "name": "Cooking",
+        "description": "Illustration related to cooking or culinary activities.",
+        "fileName": "Cooking.svg"
+    },
+    {
+        "name": "Day",
+        "description": "Visual representation of daytime or daylight.",
+        "fileName": "Day.svg"
+    },
+    {
+        "name": "Delivery",
+        "description": "Illustration of delivery service or package transportation.",
+        "fileName": "Delivery.svg"
+    },
+    {
+        "name": "Fall",
+        "description": "Visual representing the autumn season.",
+        "fileName": "Fall.svg"
+    },
+    {
+        "name": "Food",
+        "description": "Illustration of various food items or cuisine.",
+        "fileName": "Food.svg"
+    },
+    {
+        "name": "Night",
+        "description": "Visual representation of nighttime or darkness.",
+        "fileName": "Night.svg"
+    },
+    {
+        "name": "Office Setup",
+        "description": "Illustration of a workplace setup with desk, chair, and lamp.",
+        "fileName": "Office Desk and chair with a lamp.svg"
+    },
+    {
+        "name": "Spring",
+        "description": "Visual representing the spring season.",
+        "fileName": "Spring.svg"
+    },
+    {
+        "name": "Stamp",
+        "description": "Illustration of a stamp or seal.",
+        "fileName": "Stamp.svg"
+    },
+    {
+        "name": "Summer",
+        "description": "Visual representing the summer season.",
+        "fileName": "Summer.svg"
     }
 ]
