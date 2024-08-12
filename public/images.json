@@ -193,5 +193,10 @@
         "name": "Summer",
         "description": "Visual representing the summer season.",
         "fileName": "Summer.svg"
+    },
+    {
+        "name":"Bundle",
+        "description":"Illustration of a bundle or package deal.",
+        "fileName":"Bundle.svg"
     }
 ]
