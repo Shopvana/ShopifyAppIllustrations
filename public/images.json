@@ -198,5 +198,55 @@
         "name":"Bundle",
         "description":"Illustration of a bundle or package deal.",
         "fileName":"Bundle.svg"
+    },
+    {
+        "name": "AI",
+        "description": "Cloud-based artificial intelligence illustration.",
+        "fileName": "AI.svg"
+    },
+    {
+        "name": "Blockchain",
+        "description": "Connected hexagonal blocks representing blockchain technology.",
+        "fileName": "BLOCKCHAIN.svg"
+    },
+    {
+        "name": "Blocking Coupon",
+        "description": "Crossed-out coupon symbol indicating blocked or invalid discount.",
+        "fileName": "BLOCKING COUPON.svg"
+    },
+    {
+        "name": "Chalkboard",
+        "description": "Visual of a chalkboard with analytics or data.",
+        "fileName": "CHALKBOARD.svg"
+    },
+    {
+        "name": "Community",
+        "description": "Illustration of people representing community or users.",
+        "fileName": "COMMUNITY.svg"
+    },
+    {
+        "name": "Editing Orders",
+        "description": "Shopping cart with edit pencil icon.",
+        "fileName": "EDITING ORDERS.svg"
+    },
+    {
+        "name": "Email",
+        "description": "Cloud-based email or messaging illustration.",
+        "fileName": "EMAIL.svg"
+    },
+    {
+        "name": "Fitness",
+        "description": "Heart rate or health monitoring symbol.",
+        "fileName": "FITNESS.svg"
+    },
+    {
+        "name": "Ribbon",
+        "description": "Decorative bow or ribbon illustration.",
+        "fileName": "RIBBON.svg"
+    },
+    {
+        "name": "SMS",
+        "description": "Text message or SMS notification illustration.",
+        "fileName": "SMS.svg"
     }
 ]
